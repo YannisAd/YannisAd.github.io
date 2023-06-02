@@ -16,8 +16,26 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+
+
     </head>
     <body id="page-top">
+
+        <script>
+            $( document ).ready(function() {
+              $('#headerVideoLink').magnificPopup({
+              type:'inline',
+              midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+              });
+          });
+             
+          </script>
+
         <button id="languageSwitch" class="btn btn-primary" onclick="toggleLanguage()">Switch to English</button>
 
         <!-- Navigation-->
@@ -34,7 +52,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" data-french="Scolarité" data-english="Education" href="#education">Scolarité</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" data-french="Compétences" data-english="Skills" href="#skills">Compétences</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" data-french="Passions" data-english="Interrests" href="#interests">Passions</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-french="Contact" data-english="Contact" href="#Contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" data-french="Projets" data-english="Projects" href="#projet">Projets</a></li>
                     
                 </ul>
             </div>
@@ -218,25 +236,111 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <section class="resume-section" id="Contact">
+            <section class="resume-section" id="projet">
                 <div class="resume-section-content">
-                    <h2 class="mb-5" >Contact</h2>
+                    <h2 class="mb-5" >Projets</h2>
 
 
-
-
-                    <form action="mailto:addi.yannis@gmail.com" method="post" enctype="text/plain">
-                        <label for="name">Nom:</label><br>
-                        <input type="text" id="name" name="name" required><br><br>
+                    <div class="container" id="projet">
+                        <div class="closed-box bg-1">
+                          <img src="assets/img/react.png" style="
+                          width: 500px;
+                          height: 250px;
+                      ">
+                        </div>
+                        <div class="closed-box bg-2">
+                          <img src="assets/img/omeka.png" style="height: 100%; width: 100%;">
+                        </div>
                         
-                        <label for="email">E-mail:</label><br>
-                        <input type="email" id="email" name="email" required><br><br>
+                        <div class="open-box">
+                          <img src="assets/img/cancel-button.png" class="close-button">
+                          <h1 data-english="Fitness App with React" data-french="Application de coaching sportif" style="font-size: 400%;">Application de coaching sportif </h1>
+                          <p>
+                          <p>
+                            <h4 style="display: inline-block" data-french="Langages" data-english="Languages">Langages :</h4> React, CSS, HTML, SCSS</p>
+                          <p >
+                            <h4 style="display: inline-block">Description:</h4> 
+                            <p data-english="Creation of a web application prototype (with React.js) associated with a REST API allowing the user to have a follow-up of his sports activity" data-french="Création d'un prototype d'application web (React.js) associée à une API REST permettant à l'utilisateur d'avoir un suivi de son activité sportives">
+                                Création d'un prototype d'application web (React.js) associée à une API REST permettant à l'utilisateur d'avoir un suivi de son activité sportives </p>
+                            </p>
+
+                            
+
+
+
+
+                        </div>
+
+                        <div class="open-box">
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495601/cancel-button.png" class="close-button">
+                          <h1 data-french="Plateforme du Projet ANR PatriMaths" data-english="Platform of the ANR PatriMaths Project" style="font-size: 400%;">Plateforme du Projet ANR PatriMaths</h1>
+                          <p>
+                            <h4 style="display: inline-block">URL:</h4> 
+                            <a href="http://patrimath.ahp-numerique.fr" target="_blank">http://patrimath.ahp-numerique.fr</a></p>
+                          <p>
+                            <h4 style="display: inline-block" data-french="Langages" data-english="Languages">Langages :</h4> CSS, HTML, PHP, JavaScript</p>
+                          <p>
+                            <p >
+                                <h4 style="display: inline-block">Description:</h4> 
+                                <p data-english="Use of CMS Omeka S, to create a common platform for project researchers and the public. Use of semantic web tools and creation of Omeka S module in PHP" data-french="Utilisation du CMS Omeka S, pour créer une plateforme commune pour les chercheurs du projets et le publics. Utilisation des outils du web semantique et création de module Omeka S en Php">
+                                    Utilisation du CMS Omeka S, pour créer une plateforme commune pour les chercheurs du projets et le publics. Utilisation des outils du web semantique et création de module Omeka S en PHP </p>
+                                </p>                            </p>
+
+                        </div>
+                       
                         
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="5" required></textarea><br><br>
                         
-                        <input type="submit" value="Envoyer">
-                      </form>
+                    </div>
+                    <div class="closed-box bg-3" style="text-align-last: center; max-width: 91.5%;">
+                            <img src="assets/img/pets.png" style="width: auto;
+                            height: 100%;">
+                          </div>
+                          
+                        <!-- <div class="closed-box bg-4">
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495601/imac.png" width="200px"> -->
+                        <!-- </div> -->
+
+
+                        <div class="open-box">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495601/cancel-button.png" class="close-button">
+                            <h1 data-french="Maquette de l'application Pet's Groove" data-english="Pet's Groove app mockup">Maquette de l'application Pet's Groove </h1>
+                            <p>
+                                <h4 style="display: inline-block">URL:</h4>
+                                <p><a href="https://www.figma.com/file/PCmsHWQnz4ZGiXW0KSAWdS/Pet's-groove?node-id=0%3A1" target="_blank">https://www.figma.com/file/PCmsHWQnz4ZGiXW0KSAWdS/Pet's-groove?node-id=0%3A1</a></p>
+                                                        <p>
+                                <h4 style="display: inline-block" data-french="Outils" data-english="Tools">Outils :</h4> Figma</p>
+                                <p>
+                                    <p >
+                                        <h4 style="display: inline-block">Description:</h4> 
+                                        <p data-english="Creation of a model for a social network for sharing animal videos. The app lets you create music with animal movements using an AI" data-french="Création d'une maquette pour un réseau social de partage de vidéos d'animaux. L'application vous permet de créer de la musique avec des mouvements d'animaux à l'aide d'une IA.">
+                                            Création d'une maquette pour un réseau social de partage de vidéos d'animaux. L'application vous permet de créer de la musique avec des mouvements d'animaux à l'aide d'une IA. </p>
+                                        </p>                            </p>
+                          </div>
+
+
+                        <!-- <div class="open-box" style="max-width: 91.5%;">
+                          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495601/cancel-button.png" class="close-button">
+                          <h1>here's a cool project (4)</h1>
+                          <p>
+                            <h4 style="display: inline-block">URL:</h4> </p>
+                          <p>
+                            <h4 style="display: inline-block" data-french="Langages" data-english="Languages">Langages :</h4> CSS, HTML, PHP, JavaScript</p>
+                            <p >
+                                <h4 style="display: inline-block">Description:</h4> 
+                                <p >
+                                </p>
+                                </p>                            </p>
+
+ 
+                          <div class="view-button">view</div>
+                        </div> -->
+                       
+
+
+                        
+                    
+
+                    
                     
                 </div>
             </section>

@@ -403,6 +403,88 @@ textarea {
   resize: vertical;
 }
 
+
+.container#projet {
+  width: 1530px;
+  margin: auto;
+  --bs-gutter-x: 0rem;
+
+  
+}
+
+.bg-1 {
+  background-color: #20807a; 
+}
+
+.bg-2 {
+  background-color: #54b98b; 
+}
+
+.bg-3 {
+  background-color: #e5e5e5; 
+}
+
+.bg-4 {
+  background-color: #fd785d; 
+}
+
+
+
+.close-button {
+  height: 25px;
+  width: 25px;
+  float: right;
+  opacity: .3;
+  transition: opacity .5s;
+}
+
+.view-button {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  margin-top: 30px;
+  float: right;
+  opacity: .7;
+  transition: opacity .3s;
+  color: #fff;
+  letter-spacing: 2px;
+  
+}
+
+.view-button:hover {
+  opacity: 1;
+}
+
+.close-button:hover {
+  opacity: .7;
+}
+
+.closed-box {
+  margin: 5px;
+  width: 500px;
+  height: 250px;
+  float: left;
+}
+
+
+
+
+.open-box {
+  position: relative;
+  float: left;
+  background-color: lightgray;
+  padding: 15px;
+  margin: 5px;
+  color: #777;
+  font-size: 18px;
+  max-width: 76.5%;
+}
+
+
+
 fieldset {
   min-width: 0;
   padding: 0;
