@@ -77,3 +77,21 @@ $(".close-button").click(function() {
   $(".open-box").slideUp();
 });
 
+document.getElementById("language-toggle").addEventListener("change", toggleLanguage);
+
+    function toggleLanguage() {
+        var elements = document.querySelectorAll("[data-french], [data-english]");
+        var switchButton = document.getElementById("language-toggle");
+
+        if (switchButton.checked) {
+            elements.forEach(function (element) {
+                element.textContent = element.getAttribute("data-english");
+                document.getElementById("cvDownloadLink").href = "assets/img/CV_ADDi_Yannis_eng.pdf";
+            });
+        } else {
+            elements.forEach(function (element) {
+                element.textContent = element.getAttribute("data-french");
+                document.getElementById("cvDownloadLink").href = "assets/img/CV_ADDi_Yannis.pdf";
+            });
+        }
+    }

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+
         <title>Portfolio Yannis</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -26,17 +27,12 @@
     </head>
     <body id="page-top">
 
-        <script>
-            $( document ).ready(function() {
-              $('#headerVideoLink').magnificPopup({
-              type:'inline',
-              midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-              });
-          });
-             
-          </script>
+        
 
-        <button id="languageSwitch" class="btn btn-primary" onclick="toggleLanguage()">Switch to English</button>
+
+        
+
+
 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -44,8 +40,15 @@
                 <span class="d-block d-lg-none">Clarence Taylor</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
             </a> -->
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">FR</span>
+                <span class="off">EN</span>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
+                
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" data-french="À propos" data-english="About me" href="#about">À propos</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" data-french="Experience" data-english="Experience" href="#experience">Experience</a></li>
@@ -62,15 +65,17 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Yannis
-                        <span class="text-primary">ADDI</span>
-                    </h1>
+                    <div class="d-flex align-items-center">
+                        <img src="assets/img/pp.png" width="50px" class="mr-3">
+            
+                        <h1 class="mb-0" style="color: #4c485f;">
+                            Yannis
+                            <span class="text-primary">ADDI</span>
+                        </h1>
+                    </div>
+                    
                     <div class="subheading mb-5">
-                        
-                        <a href="mailto:name@email.com">addi.yannis@gmail.com</a>
-                        
-                        
+                        <a href="mailto:addi.yannis@gmail.com">addi.yannis@gmail.com</a>
                     </div>
                     <p class="lead mb-5" 
                     
@@ -230,7 +235,7 @@
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
-                    <h2 class="mb-5" data-french="Passinos" data-english="INTERESTS">Passions</h2>
+                    <h2 class="mb-5" data-french="Passions" data-english="INTERESTS">Passions</h2>
                     <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
                     <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
                 </div>
@@ -257,9 +262,9 @@
                           <h1 data-english="Fitness App with React" data-french="Application de coaching sportif" style="font-size: 400%;">Application de coaching sportif </h1>
                           <p>
                           <p>
-                            <h4 style="display: inline-block" data-french="Langages" data-english="Languages">Langages :</h4> React, CSS, HTML, SCSS</p>
+                            <h4 style="display: inline-block" data-french="Langages" data-english="Languages">Langages : </h4> React, CSS, HTML, SCSS</p>
                           <p >
-                            <h4 style="display: inline-block">Description:</h4> 
+                            <h4 style="display: inline-block">Description : </h4> 
                             <p data-english="Creation of a web application prototype (with React.js) associated with a REST API allowing the user to have a follow-up of his sports activity" data-french="Création d'un prototype d'application web (React.js) associée à une API REST permettant à l'utilisateur d'avoir un suivi de son activité sportives">
                                 Création d'un prototype d'application web (React.js) associée à une API REST permettant à l'utilisateur d'avoir un suivi de son activité sportives </p>
                             </p>
@@ -275,13 +280,13 @@
                           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495601/cancel-button.png" class="close-button">
                           <h1 data-french="Plateforme du Projet ANR PatriMaths" data-english="Platform of the ANR PatriMaths Project" style="font-size: 400%;">Plateforme du Projet ANR PatriMaths</h1>
                           <p>
-                            <h4 style="display: inline-block">URL:</h4> 
+                            <h4 style="display: inline-block">URL : </h4> 
                             <a href="http://patrimath.ahp-numerique.fr" target="_blank">http://patrimath.ahp-numerique.fr</a></p>
                           <p>
-                            <h4 style="display: inline-block" data-french="Langages" data-english="Languages">Langages :</h4> CSS, HTML, PHP, JavaScript</p>
+                            <h4 style="display: inline-block" data-french="Langages" data-english="Languages">Langages : </h4> CSS, HTML, PHP, JavaScript</p>
                           <p>
                             <p >
-                                <h4 style="display: inline-block">Description:</h4> 
+                                <h4 style="display: inline-block">Description : </h4> 
                                 <p data-english="Use of CMS Omeka S, to create a common platform for project researchers and the public. Use of semantic web tools and creation of Omeka S module in PHP" data-french="Utilisation du CMS Omeka S, pour créer une plateforme commune pour les chercheurs du projets et le publics. Utilisation des outils du web semantique et création de module Omeka S en Php">
                                     Utilisation du CMS Omeka S, pour créer une plateforme commune pour les chercheurs du projets et le publics. Utilisation des outils du web semantique et création de module Omeka S en PHP </p>
                                 </p>                            </p>
@@ -291,7 +296,7 @@
                         
                         
                     </div>
-                    <div class="closed-box bg-3" style="text-align-last: center; max-width: 91.5%;">
+                    <div class="closed-box bg-3" style="text-align-last: center; max-width: 91.5%; margin-left: 23%;">
                             <img src="assets/img/pets.png" style="width: auto;
                             height: 100%;">
                           </div>
@@ -301,14 +306,14 @@
                         <!-- </div> -->
 
 
-                        <div class="open-box">
+                        <div class="open-box" style="max-width: 91.5%;">
                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495601/cancel-button.png" class="close-button">
-                            <h1 data-french="Maquette de l'application Pet's Groove" data-english="Pet's Groove app mockup">Maquette de l'application Pet's Groove </h1>
+                            <h1 data-french="Maquette de l'application Pet's Groove" data-english="Pet's Groove app mockup" style="font-size: 400%;">Maquette de l'application Pet's Groove </h1>
                             <p>
-                                <h4 style="display: inline-block">URL:</h4>
+                                <h4 style="display: inline-block">URL : </h4>
                                 <p><a href="https://www.figma.com/file/PCmsHWQnz4ZGiXW0KSAWdS/Pet's-groove?node-id=0%3A1" target="_blank">https://www.figma.com/file/PCmsHWQnz4ZGiXW0KSAWdS/Pet's-groove?node-id=0%3A1</a></p>
                                                         <p>
-                                <h4 style="display: inline-block" data-french="Outils" data-english="Tools">Outils :</h4> Figma</p>
+                                <h4 style="display: inline-block" data-french="Outils" data-english="Tools">Outils : </h4> Figma</p>
                                 <p>
                                     <p >
                                         <h4 style="display: inline-block">Description:</h4> 
@@ -316,7 +321,6 @@
                                             Création d'une maquette pour un réseau social de partage de vidéos d'animaux. L'application vous permet de créer de la musique avec des mouvements d'animaux à l'aide d'une IA. </p>
                                         </p>                            </p>
                           </div>
-
 
                         <!-- <div class="open-box" style="max-width: 91.5%;">
                           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/495601/cancel-button.png" class="close-button">
@@ -354,30 +358,7 @@
 
         <script src="js/scripts.js"> </script>
 
-        <script>
-        function toggleLanguage() {
-        var elements = document.querySelectorAll("[data-french], [data-english]");
-        var switchButton = document.getElementById("languageSwitch");
-
-        if (switchButton.textContent === "Switch to English") {
-          elements.forEach(function (element) {
-            element.textContent = element.getAttribute("data-english");
-            document.getElementById("cvDownloadLink").href = "assets/img/CV_ADDi_Yannis_eng.pdf";
-
-          });
-          switchButton.textContent = "Passer en français";
-        } else {
-          elements.forEach(function (element) {
-            element.textContent = element.getAttribute("data-french");
-            document.getElementById("cvDownloadLink").href = "assets/img/CV_ADDi_Yannis.pdf";
-
-          });
-          switchButton.textContent = "Switch to English";
-        }
-      }
-
-      
-          </script>
+        
           
     </body>
 </html>
