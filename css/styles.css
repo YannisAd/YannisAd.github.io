@@ -467,6 +467,7 @@ textarea {
   width: 500px;
   height: 250px;
   float: left;
+  cursor: pointer;
 }
 
 
