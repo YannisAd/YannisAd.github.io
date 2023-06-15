@@ -104,6 +104,13 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+p#passion {
+  max-width: 90ch;
+    font-size: 19px;
+    margin-top: 10%;
+
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -247,7 +254,7 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: #4c485f;
   text-decoration: underline;
 }
 a:hover {
