@@ -1246,3 +1246,55 @@ ul#soft {
   height: 150px;
 }
 
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #sideNav {
+    .navbar {
+      &-brand {
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .nav-link {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .resume-section {
+    padding: 2rem 0;
+  }
+
+  #about {
+    .resume-section-content {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .subheading {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  #skills, #interests, #projet {
+    .resume-section-content {
+      padding: 1rem;
+    }
+  }
+
+  .closed-box, .open-box {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .open-box {
+    padding: 1rem;
+  }
+}
