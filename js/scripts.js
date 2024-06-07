@@ -14,16 +14,22 @@ window.addEventListener('DOMContentLoaded', event => {
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
 
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
-});
+    // Function to close the navbar when toggler is visible and clicked
+    const closeNavbar = () => {
+        if (window.getComputedStyle(navbarToggler).display !== 'none') {
+            navbarToggler.click();
+        }
+    };
 
-$(document).ready(function() {
+    // Add click event listener to toggler
+    navbarToggler.addEventListener('click', closeNavbar);
+
+    // Add click event listener to responsive nav items to close navbar
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', closeNavbar);
+    });
+
+    // Additional JavaScript code from previous block
     $('.list-inline-item i').hover(
         function() {
             var description = $(this).data('description');
@@ -66,23 +72,6 @@ $(document).ready(function() {
 
     // Language toggle
     document.getElementById("language-toggle").addEventListener("change", toggleLanguage);
-
-    function toggleLanguage() {
-        var elements = document.querySelectorAll("[data-french], [data-english]");
-        var switchButton = document.getElementById("language-toggle");
-
-        if (switchButton.checked) {
-            elements.forEach(function (element) {
-                element.textContent = element.getAttribute("data-english");
-                document.getElementById("cvDownloadLink").href = "assets/img/CV_ADDi_Yannis_eng.pdf";
-            });
-        } else {
-            elements.forEach(function (element) {
-                element.textContent = element.getAttribute("data-french");
-                document.getElementById("cvDownloadLink").href = "assets/img/CV_ADDi_Yannis.pdf";
-            });
-        }
-    }
 
     // Gallery functionality
     $('.gallery ul li a').click(function() {
