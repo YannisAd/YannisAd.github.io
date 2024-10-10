@@ -92,3 +92,29 @@ window.addEventListener('DOMContentLoaded', event => {
         }, 200);
     });
 });
+
+
+// Fonction pour changer la langue
+function switchLanguage(lang) {
+    // Récupère tous les éléments qui ont un attribut 'data-french' ou 'data-english'
+    const elements = document.querySelectorAll('[data-french], [data-english]');
+    
+    elements.forEach(element => {
+        if (lang === 'fr') {
+            // Met à jour le texte en français
+            element.textContent = element.getAttribute('data-french');
+        } else {
+            // Met à jour le texte en anglais
+            element.textContent = element.getAttribute('data-english');
+        }
+    });
+}
+
+// Écouteur d'événement sur le bouton de basculement de langue
+document.getElementById('language-toggle').addEventListener('change', function () {
+    if (this.checked) {
+        switchLanguage('fr');
+    } else {
+        switchLanguage('en');
+    }
+});
